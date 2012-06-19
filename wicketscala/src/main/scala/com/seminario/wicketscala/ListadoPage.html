@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Apache Wicket Quickstart</title>
+<link rel="stylesheet" href="bootstrap.css" type="text/css"
+	media="screen" title="Stylesheet" />
+</head>
+<body>
+	<h1>Listado de Alumnos</h1>
+
+	<div wicket:id="container">
+		<ul wicket:id="listado">
+			<li><span wicket:id="nombre"></span> <span wicket:id="apellido"></span></li>
+		</ul>
+
+		<div wicket:id="sin_alumnos">No hay alumnos cargados</div>
+	</div>
+
+	<h1>Magia ajax</h1>
+	<a wicket:id="agregar_random">Agregar un alumno y refrescar por
+		ajax</a>
+</body>
+</html>
