@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Apache Wicket Quickstart</title>
+<link rel="stylesheet" href="bootstrap.css" type="text/css"
+	media="screen" title="Stylesheet" />
+</head>
+<body>
+	<h2>Links</h2>
+	<a wicket:id="link">Listado</a>
+
+	<h2>Info del alumno cargado</h2>
+	<p wicket:id="alumno_info"></p>
+
+	<h2>Formulario</h2>
+	<form class="form-horizontal" wicket:id="form">
+		<div wicket:id="feedback"></div>
+		<fieldset>
+			<legend>Datos personales</legend>
+			<div class="control-group">
+				<label class="control-label" for="nombre">Nombre</label>
+				<div class="controls">
+					<input type="text" class="input-xlarge" id="nombre"
+						wicket:id="nombre">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="apellido">Apellido</label>
+				<div class="controls">
+					<input type="text" class="input-xlarge" id="apellido"
+						wicket:id="apellido">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="edad">Edad</label>
+				<div class="controls">
+					<input type="text" class="input-xlarge" id="edad" wicket:id="edad">
+				</div>
+			</div>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">Grabar
+					cambios</button>
+				<button class="btn">Cancelar</button>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
